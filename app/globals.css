@@ -2,26 +2,51 @@
 @tailwind components;
 @tailwind utilities;
 
+html,
+body,
 :root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+  height: 100%;
+  background-color: black;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
+.home-subtitle {
+  font-size: 1.75rem;
+  letter-spacing: 2.35px;
 }
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+h3 {
+  font-size: 56px;
+  color: white;
+}
+
+h4 {
+  font-size: 32px;
+  color: white;
+}
+
+h5 {
+  font-size: 28px;
+  letter-spacing: 4.75px;
+  color: white;
+}
+
+p {
+  font-family: sans-serif;
+  color: white;
+}
+
+.sub-heading-1 {
+  font-size: 28px;
+  color: white;
+}
+
+.blur-background {
+  backdrop-filter: blur(1.5rem);
+  background-color: hsl(0, 0%, 100%) / 0.05;
+}
+
+.nav-text {
+  font-size: 16px;
+  letter-spacing: 2.7px;
+  color: white;
 }
